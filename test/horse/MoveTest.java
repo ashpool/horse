@@ -14,13 +14,13 @@ public class MoveTest extends TestCase
     {
       System.out.println("Starting at position: " + i);
       ChessBoard.INSTANCE.init();
-      ChessBoard.INSTANCE.completedMoves = new ArrayList();
+      ChessBoard.INSTANCE.completedMoves = new ArrayList<Move>();
       Move move = new Move(null, i);
       move.doMove();
       assertTrue(Move.isCompleted);
       if (Move.isCompleted)
       {
-        for (Iterator iterator = ChessBoard.INSTANCE.completedMoves.iterator(); iterator
+        for (Iterator<?> iterator = ChessBoard.INSTANCE.completedMoves.iterator(); iterator
             .hasNext();)
         {
           Move successful = (Move) iterator.next();

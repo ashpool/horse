@@ -8,7 +8,7 @@ public class ChessBoard
   public static final int SIDE_LENGHT = 8;
   public static final int NUMBER_OF_SQUARES = SIDE_LENGHT * SIDE_LENGHT;
   public boolean[] visitedPositions = new boolean[NUMBER_OF_SQUARES];
-  public ArrayList completedMoves = new ArrayList();
+  public ArrayList completedMoves = new ArrayList<Move>();
 
   private ChessBoard()
   {
