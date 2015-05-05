@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'horse.Start'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
