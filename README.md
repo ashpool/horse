@@ -11,4 +11,3 @@ gradle build
 ```
 java -jar build/libs/horse.jar
 ```
-
